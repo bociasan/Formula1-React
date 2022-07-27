@@ -1,0 +1,152 @@
+
+
+.driver-card {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-top-right-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 25em;
+
+    padding-top: 0px;
+    margin-top: 10px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.driver-card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 98%;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+
+
+.driver-index{
+    font-family: F1Black;
+    font-size: 2.625rem;
+    align-self: center;
+}
+
+.pts-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.points-number{
+    /*font-family: F1Wide;*/
+    /*font-size: 1.5em;*/
+    /*text-align: right;*/
+    /*align-self: center;*/
+    font-family: F1Wide;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pts-div{
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 0 0 auto;
+    padding: 1px 0 0;
+    text-align: center;
+    width: 70px;
+    font-family: F1Wide;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.arrow-buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.arrow-img{
+    /*width: 3em;*/
+    height: 1.5em;
+    padding: 0 10px 0 10px;
+}
+
+.dec-img{
+    transform: rotate(180deg);
+}
+
+.space-between{
+    display: flex;
+    justify-content:
+            space-between;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.team-color{
+    width: 10px;
+    margin-right: 5px;
+}
+
+.driver-firstname{
+    font-family: F1Regular;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.driver-lastname{
+    font-family: F1Bold;
+    font-weight: 800;
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+
+.flag {
+    margin: 0 5px 0 0 ;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 15%;
+}
+
+.team-name{
+    font-size: 20;
+    color: grey;
+}
+
+.div-relative {
+    position: relative;
+    height: 22%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.driver-number{
+    font-size: 80;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+}
+
+.plus-div{
+    background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
+    background-repeat: repeat;
+    height: 15em;
+    width: 40em;
+    margin: 0 5px 0 0 ;
+}
+
+.driver-img{
+    position: absolute;
+    margin-left: 27%;
+    height: 17em;
+}

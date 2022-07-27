@@ -1,0 +1,19 @@
+@font-face {
+    font-family: F1Black;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Black/Formula1-Black.woff2);
+}
+
+@font-face {
+    font-family: F1Wide;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Wide/Formula1-Wide.woff2);
+}
+
+@font-face {
+    font-family: F1Regular;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2);
+}
+
+@font-face {
+    font-family: F1Year;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2);
+}
