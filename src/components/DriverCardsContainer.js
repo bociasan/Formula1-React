@@ -1,27 +1,34 @@
 import { mockData } from "../data/mockData.js";
-import { mockFlags } from "../data/flags.js";
-import { mockNumbers } from "../data/numbers.js";
 import {DriverCard} from "./DriverCard";
 import {useState} from "react";
 
 export const DriverCardsContainer = () => {
     const [drivers, setDrivers] = useState([...mockData.sort((a,b) => b.points - a.points)])
-    const incrementFunc = (key, setPoints) => {
-        let findDriver = drivers.find((driver) => (
-            driver.number===key))
-        findDriver.points++
+
+    const incrementFunc = (key) => {
+        drivers.find((driver) => (driver.number===key)).points++
         setDrivers([...drivers].sort((a, b) => (b.points - a.points)))
     }
 
     const decrementFunc = (key) => {
-        drivers.find((driver) =>driver.number==key).points--
-        drivers.sort((a, b) => (b.points - a.points))
+        let driverPoints = drivers.find((driver) => driver.number==key)
+        driverPoints.points > 0 ?  driverPoints.points-- : driverPoints.points = 0
         setDrivers([...drivers].sort((a, b) => (b.points - a.points)))
     }
 
-    return drivers.map((driver, index)=> (
-        <DriverCard dataKey={driver.number} key={driver.number} driver={driver} index={index+1} incrementFunc={incrementFunc} decrementFunc={decrementFunc} />
-    ))
-    //console.log(drivers)
+    const incrementDecrementFunc = (key, type = false) => {
+        let driverPoints = drivers.find((driver) => driver.number==key)
+        type ? driverPoints.points++
+            : driverPoints.points > 0 ? driverPoints.points-- : driverPoints.points = 0
+        setDrivers([...drivers].sort((a, b) => (b.points - a.points)))
+    }
 
+
+
+    return drivers.map((driver, index)=> (
+        <DriverCard dataKey={driver.number} key={driver.number} driver={driver} index={index+1}
+                    incrementDecrementFunc={incrementDecrementFunc}/>
+
+        // <DriverCard dataKey={driver.number} key={driver.number} driver={driver} index={index+1} incrementFunc={incrementFunc} decrementFunc={decrementFunc} />
+    ))
 }

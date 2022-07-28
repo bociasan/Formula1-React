@@ -1,4 +1,6 @@
-
+:root{
+    --custom-color:black;
+}
 
 .driver-card {
     border-top: 3px solid black;
@@ -13,6 +15,14 @@
     margin-top: 10px;
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
+}
+
+.driver-card:hover{
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    border-color: var(--custom-color);
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
 .driver-card-top{
