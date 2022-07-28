@@ -1,0 +1,12 @@
+.search-div{
+    position: relative;
+    height: 10vh;
+    width: 95%;
+    margin: 5px;
+}
+
+.search-bar{
+    margin: 10px;
+    height: 40px;
+    width:50%;
+}
